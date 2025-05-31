@@ -47,7 +47,7 @@ Scanner sc=new Scanner(System.in);
 
                     }
                     else {
-                        System.out.println(false); //problem is for spaces , a,b,c false is printeed
+                        System.out.println(false); 
                         return;
                     }
                 }
