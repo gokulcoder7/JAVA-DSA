@@ -67,7 +67,9 @@ if(j>=0){
 
 
 }
-
+if(c!=0){
+ System.out.print(c+" ");
+}
 
         for(i=0;i<ma;i++){
            System.out.print(sum[i]+" ");
