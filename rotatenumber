@@ -1,0 +1,49 @@
+import java.util.*;
+
+
+
+
+public class new2 {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+
+
+        int nod=0;
+        int temp=n;
+        while (temp!=0){
+            temp/=10;
+            nod++;
+
+        }
+        System.out.println("nod=="+nod);
+
+
+        k=k%nod;
+
+        if(k<0){
+            k=nod+k;
+        }
+
+        double div=Math.pow(10,k);
+        double mul=Math.pow(10,nod-k);
+        double rem=n%div;
+
+        double ans=rem*mul+((double) n /div);
+
+        System.out.println("rem="+rem);
+        System.out.println("mul="+mul);
+        System.out.println("k="+k);
+        System.out.println("n /k  ="+( n /div)); // incorrect
+
+            System.out.println("ans="+(int)ans);
+
+
+        }
+}
+
+
